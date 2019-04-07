@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beauty Saloon">
+    <meta name="author" content="NastekaHair company">
+    <!--<link rel="shortcut icon" href="./img/favicon.png">-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+    <title>NastekaHair</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" async defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" async defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.2/venobox.css" async defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" async defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" async defer>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" async defer>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="loader">
+        <div class="loading"></div>
+    </div>
+    <section id="home" class="page overlay">
+        <div class="container">
+            <div class="content cover text-center">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="mt-0 mb-4 animated hiding" data-animation="fadeInDown" data-delay="300">Студия красоты NastekaHair</h1>
+                        <a class="mt-0 mb-4 btn btn-blue nav-external animated hiding" data-animation="fadeIn" data-delay="900" href="#services">Узнать больше</a>
+                        <h3 class="mt-0 mb-0 animated hiding" data-animation="fadeIn" data-delay="600">Мы расправляем ваши крылья</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="navbar-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-white fixed">
+            <div class="container">
+                <a class="navbar-brand nav-external" href="#home">NastekaHair</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Домой</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Работы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#disqus_thread">Отзывы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./price">Прайс</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section id="services" class="page">
+        <div class="container">
+            <div class="content text-center">
+                <div class="heading">
+                    <h2 class="mt-0 mb-4">Что мы делаем</h2>
+                    <div class="border"></div>
+                   <!-- <p class="mt-4 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, alias enim placeat earum quos ab.</p> -->
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 service animated hiding" data-animation="fadeInUp" data-delay="300">
+                        <i class="fa  fa-scissors fa-5x"></i>
+                        <h3 class="mt-5 mb-4"><a href="#">Стрижки</a></h3>
+                        <p>Стрижка как искусство
+                        Мы умеем чувствовать клиента, подбираем образ под твой повседневный стиль, чтобы подчеркнуть твою индивидуальность.</p>
+                    </div>
+                    <div class="col-sm-4 service animated hiding" data-animation="fadeInUp" data-delay="600">
+                        <i class="fa fa-diamond fa-5x"></i>
+                        <h3 class="mt-5 mb-4"><a href="#">Наращивание волос</a></h3>
+                        <p>Ты хочешь кардинальных перемен? Ты давно мечтаешь о длинных волосах, но все не удается их отрастить? Твои волосы недостаточно густые? Тебе не понравилась твоя стрижка ты хотела бы ее исправить?
+                        Решение Есть! С помощью испанского наращивание ты безопасно можешь отрастить волосы добавить густоту, при этом не повредив свои волосы.</p>
+                    </div>
+                    <div class="col-sm-4 service animated hiding" data-animation="fadeInUp" data-delay="900">
+                        <i class="fa fa-paint-brush fa-5x"></i>
+                        <h3 class="mt-5 mb-4"><a href="#">Яркие окрашивания</a></h3>
+                        <p>Ты давно засматриваешься на кричащие цвета но все не можешь решится?
+                        Не откладывай на потом!
+                        Будь неординарной уже сегодня!
+                        Будь счастливой!
+                        Будь сама собой!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="page">
+        <div class="container">
+            <div class="content text-center">
+                <div class="heading">
+                    <h2 class="mt-0 mb-4">Вот как мы это делаем</h2>
+                    <div class="border"></div>
+                    <p class="mt-4 mb-0">Довольный гость &mdash; счастливый мастер!
+                    Воплощаем ваши мечты в реальность!
+                    Всегда самый лучший результат, чтобы наши гости ходили с яркой, искренней улыбкой и зарядом позитива.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="portfolio">
+                            <ul class="filters list-inline">
+                                <li class="list-inline-item">
+                                    <a class="active" data-filter="*" href="#">Все</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a data-filter=".buildup" href="#">Наращивание волос</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a data-filter=".styling" href="#">Укладки</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a data-filter=".weaving" href="#">Плетение</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a data-filter=".treatment" href="#">Лечение волос</a>
+                                </li> 
+                                <li class="list-inline-item">
+                                    <a data-filter=".coloring" href="#">Окрашивание</a>
+                                </li> 
+                                <li class="list-inline-item">
+                                    <a data-filter=".polishing" href="#">Полировка волос</a>
+                                </li> 
+                                <li class="list-inline-item">
+                                    <a data-filter=".menhaircut" href="#">Стрижка мужская</a>
+                                </li> 
+                                <li class="list-inline-item">
+                                    <a data-filter=".womenhaircut" href="#">Стрижка женская</a>
+                                </li> 
+                            </ul>
+                            <ul class="items list-unstyled clearfix animated hiding mb-0" data-animation="fadeInRight">
+                                <li class="item buildup">
+                                    <a href="/work1" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/1.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Микрокапсулы</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item buildup">
+                                    <a href="work2" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/2.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>До наращивания</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item buildup">
+                                    <a href="work3" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/3.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Результат наращивания</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item polishing womenhaircut">
+                                    <a href="work4" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/4.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Волосы после полировки волос</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item polishing treatment">
+                                    <a href="work5" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/5.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Волосы до восстановления La Biosthetique</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item treatment">
+                                    <a href="work6" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/6.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Восстановление La Biosthetique PCC</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item styling">
+                                    <a href="work7" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/7.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Легкие локоны</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item styling">
+                                    <a href="work8" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/8.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Локоны на браш</span>
+                                        </div>
+                                    </a>
+                                </li>                                       
+                                <li class="item weaving">
+                                    <a href="work9" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/9.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Французская коса</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item weaving">
+                                    <a href="work10" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/10.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Двойная французская коса</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item weaving">
+                                    <a href="work11" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/11.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Плетение с резинками</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item weaving">
+                                    <a href="work12" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/12.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Плетение на длинных волосах</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item polishing">
+                                    <a href="work13" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/13.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>До полировки</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item polishing">
+                                    <a href="work14" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/14.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Магия полировки волос</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item polishing">
+                                    <a href="work15" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/15.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>До полировки волос</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item polishing womenhaircut">
+                                    <a href="work16" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/16.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>После полировки волос</span>
+                                        </div>
+                                    </a>
+                                </li>                                        
+                                <li class="item polishing treatment">
+                                    <a href="work17" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/17.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Волосы до восстановления La Biosthetique</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item treatment">
+                                    <a href="work18" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/18.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>После восстановления La Biosthetique</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item treatment">
+                                    <a href="work19" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/19.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Волосы до восстановления La Biosthetique</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item treatment">
+                                    <a href="work20" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/20.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>После восстановления La Biosthetique</span>
+                                        </div>
+                                    </a>
+                                </li>                                        
+                                <li class="item coloring">
+                                    <a href="work21" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/21.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>До окрашивания</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item coloring">
+                                    <a href="work22" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/22.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Окрашивание La Biosthetique</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item coloring">
+                                    <a href="work23" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/23.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>До окрашивания</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item coloring">
+                                    <a href="work24" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/24.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Окрашивание La Biosthetique</span>
+                                        </div>
+                                    </a>
+                                </li>                                        
+                                <li class="item coloring">
+                                    <a href="work25" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/25.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>До окрашивания</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item coloring">
+                                    <a href="work26" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/26.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>После окрашивания </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item styling womenhaircut">
+                                    <a href="work27" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/27.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Легкие локоны</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item menhaircut">
+                                    <a href="work28" data-gall="work" data-vbtype="ajax">
+                                        <img src="{{ url_for('static', filename='img/work/28.jpg') }}" alt="">
+                                        <div class="overlay">
+                                            <span>Мужская стрижка</span>
+                                        </div>
+                                    </a>    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="page">
+        <div class="container">
+            <div class="content text-center">
+                <div class="heading">
+                    <h2 class="mt-0 mb-4">О нас</h2>
+                    <div class="border"></div>
+                    <p class="mt-4 mb-0">Регулярность стрижки &mdash; залог отличного состояния твоих волос. Исключительно важно поддерживать форму и посещать мастера не реже раза в месяц. Одна из задач стрижки - оздоровлять волосы, поддерживая их жизненную силу. Даже длинные волосы необходимо раз в 1-2 месяца приводить в идеальное состояние.
+                    Во время сушки мастер покажет технику и особенности укладки, чтобы ты сама дома смогла придать стрижке идеальный вид, и порекомендует укладочные средства, наиболее подходящие для твоего типа волос.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 teammate animated hiding" data-animation="fadeInLeft" data-delay="600">
+                        <div class="profile-photo">
+                            <img class="img-fluid" src="{{ url_for('static', filename='img/team/1.jpg') }} " alt="">
+                        </div>
+                    <div class="bio mt-4">
+                            <h5 class="mb-1">Настека Дарья</h5>
+                            <p>Парикхмахер-стилист</p>
+                            <div class="border mt-4 mb-4"></div>
+                            <p>Парикмахер-стилист
+                            Специализируется на наращивании волос, не понаслышке знакома сложными техниками окрашивания и укращения непослушных волос, делая их покладистыми и поддатливыми.</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="http://www.facebook.com" title="Facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="page overlay">
+        <div class="container">
+            <div class="content cover text-center">
+                <div class="heading">
+                    <h2 class="mt-0 mb-4">Будем на связи</h2>
+                  <!--  <div class="border"></div>
+                    <p class="mt-4 mb-0"></p> -->
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 animated hiding" data-animation="fadeInRight" data-delay="600">
+                        <i class="fa fa-map-marker fa-3x"></i>
+                        <a href="#">ул. Герцена, 35, ЖК Герцен-Парк, Киев, Украина</a>
+                    </div>
+                    <div class="col-sm-4 animated hiding" data-animation="fadeInDown" data-delay="300">
+                        <i class="fa fa-phone fa-3x"></i>
+                        <a href="tel:+380502102268">(+380) 50-210-22-68</a>
+                    </div>
+                    <div class="col-sm-4 animated hiding" data-animation="fadeInLeft" data-delay="600">
+                        <i class="fa fa-envelope fa-3x"></i>
+                        <a href="mailto:nastekahair@gmail.com">nastekahair@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-www-nastekahair-kiev-ua.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 animated hiding" data-animation="fadeInUp">
+                    <ul class="social list-inline">
+                        <li class="list-inline-item">
+                            <a class="instagram" href="https://www.instagram.com/nastekahair" title="Instagram">
+                                <i class="fa fa-instagram fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="facebook" href="http://www.facebook.com" title="Facebook">
+                                <i class="fa fa-facebook fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright">
+                        Copyright 2018-2019 by  <a href="http://www.nastekahair.kiev.ua">Nastekahair</a>   
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.3.3/jquery.appear.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.2/venobox.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"> </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123406582-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123406582-2');
+</script>
+<script>
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn.bitrix24.ua/b9316855/crm/site_button/loader_1_mearvc.js');
+</script>
+
+<script id="dsq-count-scr" src="//https-www-nastekahair-kiev-ua.disqus.com/count.js" async></script>
+
+</body>
+
+</html>
+
